@@ -1,4 +1,25 @@
-.DS_Store
+# Dependencies
 node_modules/
+
+# Build outputs
 dist/
+build/
+.out/
+.cache/
+
+# Local environment
 .env
+.env.*
+!.env.example
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Test and debug artifacts
+playwright-report/
+test-results/
+screenshots/
+*.log
