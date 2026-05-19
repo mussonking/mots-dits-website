@@ -1,1 +1,5 @@
-{"dependencies": {}}
+{
+  "scripts": {
+    "build": "node scripts/build-site.mjs"
+  }
+}
