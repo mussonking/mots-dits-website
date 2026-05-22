@@ -1,4 +1,4 @@
-const WINDOWS_DOWNLOAD_URL = 'https://github.com/mussonking/motsdits-app/releases/download/v0.2.0/MotsDits_0.2.0_x64-setup.exe';
+const WINDOWS_DOWNLOAD_URL = 'https://github.com/mussonking/MotsDits/releases/download/v0.2.0/MotsDits_0.2.0_x64-setup.exe';
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "paperWarmth": "#FCF4DC",
@@ -50,7 +50,7 @@ function App() {
       </header>
       <main id="accueil">
         <section className="hero section-pad">
-          <div className="hero-copy reveal"><div className="eyebrow"><span></span> Fait pour le français d'ici</div><h1>La voix au texte, faite pour le Québec.</h1><p className="lead">Une app de dictée qui comprend ton accent, qui reste sur ton ordi, et qui aide les gens d'ici à écrire plus vite sans envoyer leur voix dans le cloud.</p><div className="hero-actions desktop-hero-actions"><a className="btn primary" href={WINDOWS_DOWNLOAD_URL}>Télécharger pour Windows</a><a className="text-link" href="#marche">Voir comment ça marche <span>-></span></a></div><div className="hero-actions mobile-hero-actions"><a className="btn primary" href="#marche">Voir comment ça marche</a></div><p className="trust desktop-trust">Gratuit en bêta · Windows et macOS · Données locales · Fait au Québec</p><p className="trust mobile-trust">App pour ordinateur. Données locales. Fait au Québec.</p></div>
+          <div className="hero-copy reveal"><div className="eyebrow"><span></span> Fait pour le français d'ici</div><h1>La voix au texte, faite pour le Québec.</h1><p className="lead">Une app de dictée qui comprend ton accent, qui reste sur ton ordi, et qui aide les gens d'ici à écrire plus vite sans envoyer leur voix dans le cloud.</p><div className="hero-actions desktop-hero-actions"><a className="btn primary" href={WINDOWS_DOWNLOAD_URL}>Télécharger pour Windows</a><a className="text-link" href="#marche">Voir comment ça marche <span>-></span></a></div><div className="hero-actions mobile-hero-actions"><a className="btn primary" href={WINDOWS_DOWNLOAD_URL}>Télécharger pour Windows</a></div><p className="trust desktop-trust">Gratuit en bêta · Windows et macOS · Données locales · Fait au Québec</p><p className="trust mobile-trust">App pour ordinateur. Données locales. Fait au Québec.</p></div>
           <Placeholder label="A" title="Illustration principale -- " className="hero-art reveal delay-1" src="assets/1.png" alt="Personne a un bureau avec un micro et des mots qui flottent autour." />
         </section>
         <section className="section-pad problem"><div className="section-head"><SectionNumber n="01" /><div><p className="kicker">Le problème</p><h2>On dirait que personne n'a testé ça avec mononc' Réjean.</h2></div></div><div className="problem-grid">{problems.map((item, i) => <article className="sketch-card problem-card" key={item.title}><img className="problem-doodle" src={`assets/problem-${i+1}.png`} alt="" aria-hidden="true" /><p>{item.title}</p></article>)}</div></section>
